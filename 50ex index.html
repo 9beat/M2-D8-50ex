@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="50ex style.css">
+    <title>50ex.M2-D8</title>
+</head>
+<body>
+     <!-- 
+        ESERCIZI HTML
+        1 Assegna un titolo per questa pagina     
+        2 Crea un tag h1 con il contenuto che preferisci
+        3 Crea una lista ordinata con alcuni elementi al suo interno
+        4 Crea una tabella con 4 righe e 5 colonne
+        5 Aggiungi un'immagine a ogni seconda cella di ogni riga
+        6 Aggiungi un tag <a> ad ogni immagine
+        7 Unisci insieme 2 celle della tabella
+        8 Dividi la pagina inserendo una riga orizzontale
+        9 Crea un elemento contenitore con al suo interno un paragrafo e una lista non ordinata
+        10 Crea un footer contenente alcune informazioni sul creatore della pagina-->
+    <header>
+        <h1 onclick="removeLastCharacter()">50ex. M2-D8</h1>
+    </header>
+    <main>
+        <section class="first">
+            <ol class="title">
+                <li>Primo elemento</li>
+                <li>Secondo elemento</li>
+                <li>Terzo elemento</li>
+                <li>Quarto elemento</li>
+                <li>Quinto elemento</li>
+            </ol>
+        </section>
+
+        <section class="second">
+            <div id="btn-container"></div>
+            <div id="btn-container2"></div>
+            <table class="border" id="table">
+                <caption><h2>tabella 4 x 5</h2></caption>
+                <tr>
+                    <td id="top-left">A1.</td>
+                    <td><a href="https://epicode.com" target="blank">link A<img src="https://picsum.photos/id/237/400/200/" alt="img"></a></td>
+                    <td>A3.</td>
+                    <td colspan="2"  id="top-right">A4./A5.</td>
+
+                </tr>
+                <tr>
+                    <td>B1.</td>
+                    <td><a href="https://epicode.com" target="blank">link B<img src="https://picsum.photos/id/227/400/200/" alt="img"></a></td>
+                    <td>B3.</td>
+                    <td colspan="2">B4./B5.</td>
+
+                </tr>
+                <tr>
+                    <td>C1.</td>
+                    <td><a href="https://epicode.com" target="blank">link C<img src="https://picsum.photos/id/217/400/200/" alt="img"></a></td>
+                    <td>C3.</td>
+                    <td colspan="2">C4./C5.</td>
+
+                </tr>
+                <tr>
+                    <td id="bottom-left">D1.</td>
+                    <td><a href="https://epicode.com" target="blank">link D<img src="https://picsum.photos/id/212/400/200/" alt="img"></a></td>
+                    <td>D3.</td>
+                    <td colspan="2" id="bottom-right">D4./D5.</td>
+
+                </tr>
+            </table>
+        </section>
+
+        <hr>
+        <section class="third">
+            <div class="container">
+                <p class="title">PARAGRAFO: Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem vitae commodi sint nulla rerum illo a, ut tenetur voluptates illum inventore impedit dolor labore odio ad nobis. Reprehenderit, dolor obcaecati.</p>
+                <ul class="title" id="lista">
+                    <li>primo elemento</li>
+                    <li>secondo elemento</li>
+                    <li class="dsp-none">terzo elemento</li>
+                    <li>quarto elemento</li>
+                    <li>quinto elemento</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>copyright Matteo Forni - Epicode 2023</p>
+    </footer>
+
+    <script src="50ex main.js"></script>
+  </body>
+</html>
